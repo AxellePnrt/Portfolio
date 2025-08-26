@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio BUT Informatique</title>
     <link rel="stylesheet" href="styles.css">
-   <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" > -->
 </head>
 <body>
+
 <header class="navbar">
     <div class="logo">💻 Mon Portfolio</div>
     <nav>
@@ -19,15 +19,16 @@
         </ul>
     </nav>
 </header>
+
 <main>
-
-
 <section class="competence-page">
     <h2>Compétence 6 : Collaborer au sein d’une équipe informatique</h2>
     <p>
         Cette compétence consiste à travailler efficacement en groupe, à comprendre les enjeux du numérique,
         et à accompagner les projets informatiques dans leur mise en place.
     </p>
+<br>
+    <h2>Apprentissages Critiques (AC)</h2>
 
     <!-- AC1 -->
     <div class="apprentissage-critique">
@@ -35,14 +36,12 @@
         <p class="description">
           Lors de mon alternance, j’ai organisé et partagé une veille technologique sur SQL Server à l’occasion du passage à une nouvelle version. 
           J’ai analysé l’ensemble des nouvelles fonctionnalités disponibles et préparé une présentation que j’ai exposée à mon équipe lors d’une réunion. 
-          Cette démarche a permis à tous les membres de se familiariser rapidement avec les nouveautés et d’optimiser leur utilisation dans nos projets en cours.
+          Cette démarche a permis à tous les membres de se familiariser rapidement avec les nouveautés.
         </p>
         <div class="preuves">
             <h4>Mes preuves :</h4>
             <ul>
-                <li><a href="liens-vers-document.pdf" target="_blank">Compte-rendu de veille technologique</a></li>
-                <li><img src="assets/images/preuve-veille.jpg" alt="Capture d'écran de veille" class="preuve-img"></li>
-                <li><a href="https://trello.com/monprojet" target="_blank">Tableau Trello collaboratif</a></li>
+                <li><a href="veille.pdf" target="_blank">Présentation veille technologique (PDF)</a></li>
             </ul>
         </div>
     </div>
@@ -52,13 +51,12 @@
         <h3>AC2 - Identifier les enjeux de l'économie de l'innovation numérique</h3>
         <p class="description">
            J’ai participé, avec les internes de mon équipe, à un hackathon organisé par CA-GIP et Dataiku. La solution que nous avons proposée visait à améliorer le temps de résolution des logs d’erreurs grâce à l’utilisation d’un LLM. 
-           Lors de la présentation de notre projet devant le jury, nous avons présenter non seulement les fonctionnalités de notre solution, mais également les enjeux économiques associés, en présentant à la fois les coûts potentiels et le retour sur investissement (ROI) attendu.
+           Lors de la présentation de notre projet devant le jury, nous avons présenté non seulement les fonctionnalités de notre solution, mais également les enjeux économiques associés, en présentant à la fois les coûts potentiels et le retour sur investissement (ROI) attendu.
         </p>
         <div class="preuves">
             <h4>Mes preuves :</h4>
             <ul>
-                <li><a href="assets/docs/rapport-enjeux.pdf" target="_blank">Rapport sur les enjeux du numérique</a></li>
-                <li><video src="assets/videos/presentation-enjeux.mp4" controls width="400"></video></li>
+                <li><a href="HackaLearn Dataiku_Pitch.pdf" target="_blank">Présentation hackaton</a></li>
             </ul>
         </div>
     </div>
@@ -69,15 +67,25 @@
         <p class="description">
             Dans le cadre de mon alternance, j’ai contribué à la conduite du changement en facilitant l’adoption de nouvelles pratiques et outils au sein de mon équipe. 
             J’ai notamment présenté les nouvelles fonctionnalités de SQL Server suite à une mise à jour, permettant à mes collègues de se familiariser rapidement avec les améliorations apportées. 
-            J’ai également mis en place des wikis détaillés pour chaque projet, afin de simplifier leur compréhension et leur maintenance par d’autres membres de l’équipe. Enfin, dans le projet BuildAI, j’ai organisé les sprints et géré un tableau Kanban sur GitHub, ce qui a structuré le suivi des tâches et favorisé une meilleure collaboration au sein du groupe
-        </p>
+            J’ai également mis en place des wikis détaillés pour chaque projet, afin de simplifier leur compréhension et leur maintenance par d’autres membres de l’équipe. 
+            
         <div class="preuves">
-            <h4>Mes preuves :</h4>
-            <ul>
-                <li><img src="assets/images/formations.jpg" alt="Formation interne" class="preuve-img"></li>
-                <li><a href="assets/docs/plan-changement.pdf" target="_blank">Plan de conduite du changement</a></li>
-            </ul>
+            <h4>Mes preuves (Appuyer sur l'image pour la voir en grand) :</h4>
+            <div class="galerie-preuves">
+                <figure class="preuve-item">
+                <a href="#img16"><img src="wiki1.png" alt="wiki" class="preuve-img"></a></a>
+                    <figcaption>Documentation d'un projet</figcaption>
+                </figure>
+                <figure class="preuve-item">
+                   <li><a href="veille.pdf" target="_blank">Présentation veille technologique (PDF)</a></li>
+                </figure>
+            </div>
         </div>
+    </div>
+
+    <div class="lightbox" id="img16">
+        <a href="#" class="close">&times;</a>
+        <img src="wiki1.png" alt="Documentation d'un projet">
     </div>
 
     <!-- AC4 -->
@@ -85,24 +93,119 @@
         <h3>AC4 - Accompagner le management de projet informatique</h3>
         <p class="description">
             Dans le cadre du projet BuildAI, j’étais régulièrement en charge de l’organisation des sprints de la SAE. Je répartissais les tâches entre les membres du groupe, organisais des réunions de suivi une à deux fois par semaine pour évaluer l’avancement, et mettais à jour le fichier de revue de sprint. 
-            Nous utilisions également un tableau Kanban sur GitHub pour suivre l’état d’avancement de chaque tâche, ce qui permettait de coordonner efficacement le travail de l’équipe et d’assurer le respect des délais
+            Nous utilisions également un tableau Kanban sur GitHub pour suivre l’état d’avancement de chaque tâche, ce qui permettait de coordonner efficacement le travail de l’équipe et d’assurer le respect des délais.
         </p>
         <div class="preuves">
             <h4>Mes preuves :</h4>
-            <ul>
-                <li><a href="Rapport-Sprint_Peenaert_Souchon_Jarrari_Nirmaladas.pdf" target="_blank">Rapport Sprint</a></li>
-                <li><img src="kanvan.png" alt="Réunion projet" class="preuve-img"></li>
-            </ul>
+        <div class="galerie-preuves">
+            <figure class="preuve-item">
+                <li><a href="Rapport-Sprint_Peenaert_Souchon_Jarrari_Nirmaladas.pdf" target="_blank">Rapport Sprints</a></li>
+            </figure>
+            <figure class="preuve-item">
+                <a href="#img8"><img src="kanvan.png" alt="kanban" class="preuve-img"></a>
+                <figcaption>Tableau Kanban</figcaption>
+            </figure>
         </div>
     </div>
-</section>
+</div>
+        </div>
+    </div>
 
+    <!-- Lightbox AC2 -->
+    <div class="lightbox" id="img8">
+        <a href="#" class="close">&times;</a>
+        <img src="kanvan.png" alt="Tableau Kanvan">
+    </div>
+
+<br>
+<br>
+<h2>Composantes Essentielles (CE)</h2>
+<!-- CE1 -->
+<div class="apprentissage-critique">
+    <h3>CE1 - En inscrivant sa démarche au sein d'une équipe pluridisciplinaire</h3>
+    <p class="description">
+       Au cours de mon alternance au Crédit Agricole, j’ai intégré une équipe pluridisciplinaire composée de profils variés : data ingénieurs, responsable d’activité, tech lead, data architect et DevOps.  
+        <br>
+Mon rôle nécessitait également de travailler en étroite collaboration avec les équipes métier, par exemple avec les départements RH ou encore Gestion, afin d’adapter nos solutions aux besoins concrets de l’organisation. Cette démarche m’a permis de mieux comprendre les enjeux et les contraintes de chaque domaine.
+    </p>
+    <div class="preuves">
+        <h4>Mes preuves :</h4>
+        <div class="galerie-preuves">
+            <figure class="preuve-item">
+                <li><a href="equipe.pdf" target="_blank">Composition de l'équipe</a></li>
+            </figure>
+            <figure class="preuve-item">
+                 <li><a href="Rapport_Alternance_Peenaert_Axelle.pdf" target="_blank">Rapport d'alternance</a></li>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<!-- CE2 -->
+<div class="apprentissage-critique">
+    <h3>CE2 - En accompagnant la mise en œuvre des évolutions informatiques</h3>
+    <p class="description">
+        Pendant mon alternance, j’ai participé à la mise en œuvre de plusieurs évolutions informatiques au sein de l’équipe Plateforme et Référentiels . J’ai contribué à la création d’un référentiel RH et organisationnel, afin d'aider les équipes RH. 
+        J’ai également travaillé sur un projet de dotation, permettant de suivre et détécter certaines anomalies concernant les mobiles, les postes de travail ainsi que les utilisateurs, ainsi que sur un projet de détection des anomalies, incluant l’envoi automatique de mails pour prévenir les équipes concernées. 
+        
+    </p>
+    <div class="preuves">
+        <h4>Mes preuves :</h4>
+        <div class="galerie-preuves">
+            <figure class="preuve-item">
+                 <li><a href="Rapport_Alternance_Peenaert_Axelle.pdf" target="_blank">Rapport d'alternance</a></li>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<!-- CE3 -->
+<div class="apprentissage-critique">
+    <h3>CE3 - Enveillant au respect des contraintes juridiques</h3>
+    <p class="description">
+        Grâce aux cours de droit du numérique et de protection intellectuelle suivis durant ma formation, j’ai acquis les bases nécessaires pour comprendre les contraintes légales. Lors de mes projets, comme la SAE, j’ai veillé à ce que l’application respecte ces règles afin de garantir sa conformité juridique.
+   </p>
+</div>
+
+<!-- CE4 -->
+<div class="apprentissage-critique">
+    <h3>CE4 - En développant une communication efficace et collaborative</h3>
+    <p class="description">
+        Au cours de mon alternance, j’ai développé mes compétences en communication en travaillant au premier plan avec les équipes métiers et les clients, pour comprendre leurs besoins et expliquer les solutions mises en place. J’ai aussi collaboré avec les personnes de mon équipe pour assurer le bon déroulement des projets ainsi que pour leur poser mes questions. Cette expérience m’a permis de participer à des réunions de suivi, des présentations de projets mais aussi de faciliter la coordination entre les différents acteurs, en veillant à ce que l’information circule efficacement et rapidement.
+<br>
+Dans le cadre de la SAE, j'ai organisé de nombreux points réguliers pour discuter de l’avancement du projet, partager nos difficultés et nous entraider. Ces échanges ont favorisé une collaboration renforcée au sein de l’équipe et ont permis de résoudre rapidement les problèmes.
+    </p>
+   
+</div>
+
+<!-- Lightbox CE -->
+<div class="lightbox" id="ce13-img1">
+    <a href="#" class="close">&times;</a>
+    <img src="assets/images/ce13-equipe.jpg" alt="Travail en équipe">
+</div>
+<div class="lightbox" id="ce14-img1">
+    <a href="#" class="close">&times;</a>
+    <img src="assets/images/ce14-evolution.jpg" alt="Mise en œuvre des évolutions">
+</div>
+<div class="lightbox" id="ce15-img1">
+    <a href="#" class="close">&times;</a>
+    <img src="assets/images/ce15-juridique.jpg" alt="Respect juridique">
+</div>
+<div class="lightbox" id="ce16-img1">
+    <a href="#" class="close">&times;</a>
+    <img src="assets/images/ce16-communication.jpg" alt="Communication collaborative">
+</div>
+
+
+</section>
 </main>
+
 <footer>
-    <p>&copy; - Portfolio BUT Informatique | Axelle Peenaert</p>
+    <p>&copy; Portfolio BUT Informatique | Axelle Peenaert</p>
 </footer>
 </body>
 </html>
+
 
 
 
