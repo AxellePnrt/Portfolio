@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio BUT Informatique</title>
     <link rel="stylesheet" href="styles.css">
-   <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" > -->
 </head>
 <body>
 <header class="navbar">
@@ -27,28 +26,61 @@
         Cette compétence consiste à collecter, organiser, analyser et exploiter des ensembles de données 
         volumineux et complexes, tout en garantissant leur qualité et leur accessibilité.
     </p>
-
+<br>
+<h2>Apprentissages Critiques (AC)</h2>
     <!-- AC1 -->
     <div class="apprentissage-critique">
         <h3>AC1 - Capturer et stocker des ensembles volumineux et complexes de données hétérogènes</h3>
         <p class="description">
             Dans le cadre de la SAE, j’ai réalisé du scraping de sites internet spécialisés dans le bâtiment afin de constituer une base de données riche et variée.
-Les données provenaient de plusieurs sources en ligne.
-Ces données ont ensuite été intégrées dans trois bases différentes selon leur nature :
-
-<li>Neo4j (base graphe) : gestion des relations entre entités.</li>
-<li>MongoDB (base documentaire) : stockage de documents semi-structurés (PDF, fiches pratiques, manuels).</li>
-<li>Qdrant (base vectorielle) : indexation sémantique grâce à un LLM pour permettre des recherches par sens et non par mots-clés.</li>
+            Les données provenaient de plusieurs sources en ligne.
+            Ces données ont ensuite été intégrées dans trois bases différentes selon leur nature :
         </p>
+        <ul>
+            <li>Neo4j (base graphe) : gestion des relations entre entités.</li>
+            <li>MongoDB (base documentaire) : stockage de documents semi-structurés (PDF, fiches pratiques, manuels).</li>
+            <li>Qdrant (base vectorielle) : indexation sémantique grâce à un LLM.</li>
+        </ul>
+
         <div class="preuves">
-            <h4>Mes preuves :</h4>
-            <ul>
-                <li><img src="scrapping.png" alt="Capture de stockage" class="preuve-img"></li>
-                <li><img src="neo4j.png" alt="Capture de stockage" class="preuve-img"></li>
-                <li><img src="mongodb.png" alt="Capture de stockage" class="preuve-img"></li>
-                <li><img src="qdrant.png" alt="Capture de stockage" class="preuve-img"></li>
-            </ul>
+            <h4>Mes preuves (Appuyer sur l'image pour la voir en grand) :</h4>
+            <div class="galerie-preuves">
+                <figure class="preuve-item">
+                    <a href="#img1"><img src="scrapping.png" alt="Scraping" class="preuve-img"></a>
+                    <figcaption>Scraping de données</figcaption>
+                </figure>
+                <figure class="preuve-item">
+                    <a href="#img2"><img src="neo4j.png" alt="Neo4j" class="preuve-img"></a>
+                    <figcaption>Base graphe Neo4j</figcaption>
+                </figure>
+                <figure class="preuve-item">
+                    <a href="#img3"><img src="mongodb.png" alt="MongoDB" class="preuve-img"></a>
+                    <figcaption>Base documentaire MongoDB</figcaption>
+                </figure>
+                <figure class="preuve-item">
+                    <a href="#img4"><img src="qdrant.png" alt="Qdrant" class="preuve-img"></a>
+                    <figcaption>Base vectorielle Qdrant</figcaption>
+                </figure>
+            </div>
         </div>
+    </div>
+
+    <!-- Lightbox (AC1) -->
+    <div class="lightbox" id="img1">
+        <a href="#" class="close">&times;</a>
+        <img src="scrapping.png" alt="Scraping">
+    </div>
+    <div class="lightbox" id="img2">
+        <a href="#" class="close">&times;</a>
+        <img src="neo4j.png" alt="Neo4j">
+    </div>
+    <div class="lightbox" id="img3">
+        <a href="#" class="close">&times;</a>
+        <img src="mongodb.png" alt="MongoDB">
+    </div>
+    <div class="lightbox" id="img4">
+        <a href="#" class="close">&times;</a>
+        <img src="qdrant.png" alt="Qdrant">
     </div>
 
     <!-- AC2 -->
@@ -56,50 +88,137 @@ Ces données ont ensuite été intégrées dans trois bases différentes selon l
         <h3>AC2 - Préparer et extraire les données pour l'exploitation</h3>
         <p class="description">
            Pendant mon alternance chez CA-GIP, j’ai travaillé sur un projet visant à filtrer et préparer des données sur les dotations des collaborateurs de l'entreprise (mobiles et postes de travail). J’ai utilisé SQL et Dataiku pour sélectionner, nettoyer et structurer les données. 
-Ces données ont ensuite été utilisées à la fois pour des Dashboard PowerBI mais aussi pour alimenter une application sur les dotations.
-Cette expérience m’a permis de mieux comprendre l’importance de la qualité des données et les impacts d’une mauvaise préparation. J’ai aussi amélioré ma rigueur et ma méthode de travail.
+           Ces données ont ensuite été utilisées à la fois pour des Dashboard PowerBI mais aussi pour alimenter une application sur les dotations.
+           Cette expérience m’a permis de mieux comprendre l’importance de la qualité des données et les impacts d’une mauvaise préparation. 
         </p>
         <div class="preuves">
-            <h4>Mes preuves :</h4>
-            <ul>
-                <li><a href="#">Notebook Python de préparation de données</a></li>
-                <li><img src="assets/images/preparation.jpg" alt="Préparation de données" class="preuve-img"></li>
-            </ul>
+            <h4>Mes preuves (Appuyer sur l'image pour la voir en grand) :</h4>
+            <div class="galerie-preuves">
+                <figure class="preuve-item">
+                    <a href="#img5"><img src="requete_sql.png" alt="Préparation de données" class="preuve-img"></a>
+                    <figcaption>Préparation des données avec une requête SQL</figcaption>
+                </figure>
+                 <figure class="preuve-item">
+                    <a href="#img6"><img src="recette.png" alt="Préparation de données" class="preuve-img"></a>
+                    <figcaption>Préparation des données avec une recette Dataiku</figcaption>
+                </figure>
+            </div>
         </div>
+    </div>
+
+    <!-- Lightbox (AC2) -->
+    <div class="lightbox" id="img5">
+        <a href="#" class="close">&times;</a>
+        <img src="requete_sql.png" alt="Préparation de données">
+    </div>
+
+       <!-- Lightbox (AC2) -->
+    <div class="lightbox" id="img6">
+        <a href="#" class="close">&times;</a>
+        <img src="recette.png" alt="Préparation de données">
     </div>
 
     <!-- AC3 -->
-    <div class="apprentissage-critique">
-        <h3>AC3 - Appliquer des méthodes d'exploration et d'exploitation des données</h3>
-        <p class="description">
-           Dans le cadre du projet BuildAI, j’ai appliqué des méthodes d’exploration de données en utilisant une base vectorielle pour analyser les formations du secteur du bâtiment. Chaque question posée par un utilisateur à notre LLM est transformée en vecteur et comparée aux vecteurs stockés, permettant d’identifier rapidement les formations les plus pertinentes. 
-           Ce processus permet d'extraire les informations utiles et guider la génération de réponses par le modèle de langage.
-        </p>
-        <div class="preuves">
-            <h4>Mes preuves :</h4>
-            <ul>
-                <li><a href="#">Rapport d’analyse avec visualisations</a></li>
-                <li><img src="assets/images/analysis.jpg" alt="Graphiques d'analyse" class="preuve-img"></li>
-            </ul>
-        </div>
+<!-- AC3 -->
+<div class="apprentissage-critique">
+    <h3>AC3 - Appliquer des méthodes d'exploration et d'exploitation des données</h3>
+    <p class="description">
+       Dans le cadre du projet BuildAI, j’ai appliqué des méthodes d’exploration de données en utilisant une base vectorielle. Chaque question posée par un utilisateur à notre LLM est transformée en vecteur et comparée aux vecteurs stockés, permettant d’identifier rapidement les formations les plus pertinentes. 
+       Ce processus permet d'extraire les informations utiles et guider la génération de réponses par le modèle de langage.
+    </p>
+    <div class="preuves">
+        <h4>Mes preuves :</h4>
+        <ul>
+            <li><a href="MINI_PRESENTATION_BUILDAI.mp4" target="_blank">Démo vidéo du projet BuildAI</a></li>
+        </ul>
     </div>
+</div>
 
-    <!-- AC4 -->
+
+ <!-- AC4 -->
     <div class="apprentissage-critique">
         <h3>AC4 - Mettre en production et optimiser le système de gestion</h3>
         <p class="description">
-          Dans le cadre de mon alternance,  pour chaque projet, j’ai assuré la mise en production en créant des scénarios automatisés permettant aux projets de s’actualiser selon la fréquence souhaitée (quotidienne, hebdomadaire ou mensuelle). 
-           Afin de garantir une maintenance efficace et un partage clair des connaissances, j’ai systématiquement rédigé un wiki pour chaque projet, servant de documentation détaillée pour que tout utilisateur puisse comprendre le fonctionnement et les spécificités du projet. 
-           Par ailleurs, j’ai travaillé à l’optimisation des requêtes SQL pour réduire le temps d’exécution et améliorer la performance globale des systèmes de gestion.
+          Dans le cadre de mon alternance, pour chaque projet, j’ai assuré la mise en production en créant des scénarios automatisés permettant aux projets de s’actualiser selon la fréquence souhaitée (quotidienne, hebdomadaire ou mensuelle). 
+          Afin de garantir une maintenance efficace et un partage clair des connaissances, j’ai systématiquement rédigé un wiki pour chaque projet, servant de documentation détaillée pour que tout utilisateur puisse comprendre le fonctionnement et les spécificités du projet. 
         </p>
         <div class="preuves">
-            <h4>Mes preuves :</h4>
-            <ul>
-                <li><a href="#">Documentation de mise en production</a></li>
-                <li><img src="assets/images/deploiement.jpg" alt="Mise en production" class="preuve-img"></li>
-            </ul>
+    <h4>Mes preuves (Appuyer sur l'image pour la voir en grand) :</h4>
+    <div class="galerie-preuves">
+        <figure>
+            <a href="#img9"><img src="scenario.png" alt="Scénario MEP"></a>
+            <figcaption>Scénario Dataiku pour automatiser l'exécution du projet</figcaption>
+        </figure>
+        <figure>
+            <a href="#img10"><img src="log.png" alt="Log"></a>
+            <figcaption>Vérification de l'exécution du scénario</figcaption>
+        </figure>
+        <figure>
+            <a href="#img11"><img src="wiki1.png" alt="Wiki"></a>
+            <figcaption>Documentation d'un projet</figcaption>
+        </figure>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Lightbox AC4 -->
+    <div class="lightbox" id="img9">
+        <a href="#" class="close">&times;</a>
+        <img src="scenario.png" alt="Scénario MEP">
+    </div>
+
+   
+    <div class="lightbox" id="img10">
+        <a href="#" class="close">&times;</a>
+        <img src="log.png" alt="log">
+    </div>
+<br>
+<br>
+<h2>Composantes Essentielles (CE)</h2>
+<!-- CE1 -->
+<div class="apprentissage-critique">
+    <h3>CE1 – En respectant les réglementations sur le respect de la vie privée et la protection des données personnelles</h3>
+    <p class="description">
+        Dans mon travail, j’ai accès à des informations sensibles et je veille à ne jamais les divulguer, comme les données personnelles des collaborateurs. 
+        De plus, dans le cadre de mon rapport d’alternance, j’ai anonymisé toutes les données pour garantir la confidentialité et respecter les règles de protection des données.
+    </p>
+    <div class="preuves">
+        <h4>Mes preuves :</h4>
+        <div class="galerie-preuves">
+            <figure class="preuve-item">
+                <li><a href="Rapport_Alternance_Peenaert_Axelle.pdf" target="_blank">Rapport d'alternance</a></li>
+            </figure>
         </div>
     </div>
+</div>
+
+ <div class="lightbox" id="ce1-img1">
+        <a href="#" class="close">&times;</a>
+        <img src="collab.png" alt="collaboration équipe métier">
+    </div>
+
+<!-- CE2 -->
+<div class="apprentissage-critique">
+    <h3>CE2 – En respectant les enjeux économiques, sociétaux et écologiques de l'utilisation du stockage de données, ainsi que les différentes infrastructures (data centers, cloud, etc.)</h3>
+    <p class="description">
+       Lors de la SAE, nous avons travaillé uniquement avec des fichiers stockés en local et avons régulièrement fait le tri de nos données pour ne conserver que celles utilisées. Pendant mon alternance, j’ai également cherché à optimiser mes requêtes afin de réduire le volume de données traitées et de rendre leur exécution plus rapide.
+    </p>
+</div>
+
+
+<!-- CE4 -->
+<div class="apprentissage-critique">
+    <h3>CE4 – En assurant la cohérence et la qualité</h3>
+    <p class="description">
+        Dans le cadre de la SAE, j’ai respecté le cahier des charges fourni et contribué à la création d’une application conforme aux attentes du projet. 
+        <br>
+        Lors de mon alternance, j’ai veillé à la qualité de mes livrables en validant systématiquement mes résultats avec mon tuteur puis avec les équipes métiers, afin de m’assurer que le travail correspondait bien aux besoins exprimés.
+         Avant tout passage en production, nous réalisions également des tests en préproduction pour garantir la fiabilité de nos livrables.
+</div>
+
+
+
 </section>
 
 </main>
@@ -108,7 +227,3 @@ Cette expérience m’a permis de mieux comprendre l’importance de la qualité
 </footer>
 </body>
 </html>
-
-
-
-
